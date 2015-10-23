@@ -1,0 +1,31 @@
+{
+  "name": "wcag2json",
+  "version": "0.1.0",
+  "description": "JSON versions of WCAG 2 and it's translations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/WilcoFiers/wcag2json.git"
+  },
+  "keywords": [
+    "a11y",
+    "accessibility",
+    "wcag",
+    "wcag2",
+    "json",
+    "javascript"
+  ],
+  "author": "Wilco Fiers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WilcoFiers/wcag2json/issues"
+  },
+  "homepage": "https://github.com/WilcoFiers/wcag2json#readme",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "request": "^2.65.0"
+  }
+}
