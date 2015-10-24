@@ -1,3 +1,5 @@
+'use strict';
+
 // Import libraries
 let request   = require('request');
 let cheerio   = require('cheerio');
@@ -6,21 +8,22 @@ let parseWcag = require('../lib/parseWcag');
 
 // Set up some data
 let translationUrls = require('../translations.json');
-let currLang        = 'nl';
-let filePath        = './html/wcag2-' + currLang + '.html';
+let currLang        = process.argv[2] || 'en';
+let htmlFilePath    = './wcag2-html/wcag2-' + currLang + '.html';
+let jsonFilePath    = './wcag2-json/wcag2-' + currLang + '.json';
 
 
 // Check if we know the file already
 new Promise(function (resolve, reject) {
-    fs.exists(filePath, resolve);
+    fs.exists(htmlFilePath, resolve);
 
 // Get the HTML
 }).then(function (exists) {
     return new Promise(function (resolve, reject) {
         if (exists) {
             // Load locally
-            console.log('reading ' + filePath);
-            fs.readFile(filePath, 'utf8', function (error, data) {
+            console.log('reading ' + htmlFilePath);
+            fs.readFile(htmlFilePath, 'utf8', function (error, data) {
                 if (error) {
                     reject(error);
                 }
@@ -37,8 +40,8 @@ new Promise(function (resolve, reject) {
                     reject(error || response);
                 }
 
-                console.log('writing ' + filePath);
-                fs.writeFile(filePath, html, 'utf8', function (error) {
+                console.log('writing ' + htmlFilePath);
+                fs.writeFile(htmlFilePath, html, 'utf8', function (error) {
                     if (error) {
                         reject(error);
                     } else {
@@ -50,6 +53,17 @@ new Promise(function (resolve, reject) {
     });
 
 // Scrape the HTML
-}).then(parseWcag)
+}).then(parseWcag.parseHtml)
+// Save the JSON data
+.then(function (json) {
+    let data = JSON.stringify(json, null, '    ');
+    
+    console.log('Creating ' + jsonFilePath);
+    fs.writeFile(jsonFilePath, data, 'utf8', function (error) {
+        if (error) {
+            console.log(error)
+        }
+    });
+})
 // Catch any errors
 .catch(console.error.bind(console, 'ERR'));
