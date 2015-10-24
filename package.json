@@ -2,9 +2,8 @@
   "name": "wcag2json",
   "version": "0.1.0",
   "description": "JSON versions of WCAG 2 and it's translations",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scrape": "node scripts/scrape-wcag.js"
   },
   "repository": {
     "type": "git",
