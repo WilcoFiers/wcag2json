@@ -1,23 +1,24 @@
 {
 	"en": "http://www.w3.org/TR/WCAG20/",
-	"ar": "http://www.alecso.org/wcag2.0/",
-	"be": "http://www.fatcow.com/resources/wai-be.html",
 	"ca": "http://www.w3.org/Translations/WCAG20-ca/",
-	"zh": "http://www.w3.org/2014/06/WCAG_ZH.html",
-	"da": "http://www.w3.org/Translations/WCAG20-da/",
 	"de": "http://www.w3.org/Translations/WCAG20-de/",
 	"es": "http://www.sidar.org/traducciones/wcag20/es/",
+	"it": "http://www.w3.org/Translations/WCAG20-it/",
+	"nl": "http://www.w3.org/Translations/WCAG20-nl/",
+	"pt": "http://www.acessibilidade.gov.pt/w3/TR/WCAG20-Candidate-ptPT/",
+	"sv": "http://www.w3.org/Translations/WCAG20-sv/",
+	
+	"ar": "http://www.alecso.org/wcag2.0/",
+	"be": "http://www.fatcow.com/resources/wai-be.html",
+	"da": "http://www.w3.org/Translations/WCAG20-da/",
 	"et": "http://www.w3.org/Translations/WCAG20-et/",
 	"fi": "http://www.w3.org/Translations/WCAG20-fi/",
 	"fr": "http://www.w3.org/Translations/WCAG20-fr/",
 	"he": "http://www.w3c.org.il/guidelines/guidelines_WCAG_2.0.html",
 	"hu": "http://www.w3c.hu/forditasok/WCAG20/",
-	"it": "http://www.w3.org/Translations/WCAG20-it/",
 	"kr": "http://archi.ssu.ac.kr/WCAG20/",
-	"nl": "http://www.w3.org/Translations/WCAG20-nl/",
 	"no": "http://www.w3.org/Translations/WCAG20-no/",
 	"pl": "http://fdc.org.pl/wcag2/",
-	"pt": "http://www.acessibilidade.gov.pt/w3/TR/WCAG20-Candidate-ptPT/",
 	"ru": "http://www.w3.org/Translations/WCAG20-ru/",
-	"sv": "http://www.w3.org/Translations/WCAG20-sv/"
+	"zh": "http://www.w3.org/2014/06/WCAG_ZH.html"
 }
