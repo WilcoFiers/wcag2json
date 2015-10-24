@@ -1,0 +1,874 @@
+{
+    "principles": [
+        {
+            "id": "WCAG2:perceivable",
+            "num": "1",
+            "handle": "Perceptible",
+            "text": "La información y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos.",
+            "guidelines": [
+                {
+                    "id": "WCAG2:text-equiv",
+                    "num": "1.1",
+                    "handle": "Alternativas textuales",
+                    "text": "Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:text-equiv-all",
+                            "num": "1.1.1",
+                            "handle": "Contenido no textual",
+                            "text": "Todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el mismo propósito, excepto en las situaciones enumeradas a continuación.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Controles, Entrada de datos",
+                                            "text": "Si el contenido no textual es un control o acepta datos introducidos por el usuario, entonces tiene un nombre que describe su propósito. (Véase la Pauta 4.1 para requisitos adicionales sobre los controles y el contenido que aceptan entrada de datos)."
+                                        },
+                                        {
+                                            "handle": "Contenido multimedia tempodependiente",
+                                            "text": "Si el contenido no textual es una presentación multimedia con desarrollo temporal, entonces las alternativas textuales proporcionan al menos una identificación descriptiva del contenido no textual. (Véase la Pauta 1.2 para requisitos adicionales sobre contenido multimedia)."
+                                        },
+                                        {
+                                            "handle": "Pruebas",
+                                            "text": "Si el contenido no textual es una prueba o un ejercicio que no sería válido si se presentara en forma de texto, entonces las alternativas textuales proporcionan al menos una identificación descriptiva del contenido no textual."
+                                        },
+                                        {
+                                            "handle": "Sensorial",
+                                            "text": "Si el contenido no textual tiene como objetivo principal el crear una experiencia sensorial específica, entonces las alternativas textuales proporcionan al menos una identificación descriptiva del contenido no textual."
+                                        },
+                                        {
+                                            "handle": "CAPTCHA",
+                                            "text": "Si el propósito del contenido no textual es confirmar que quien está accediendo al contenido es una persona y no una computadora, entonces se proporcionan alternativas textuales que identifican y describen el propósito del contenido no textual y se proporcionan formas alternativas de CAPTCHA con modos de salida para distintos tipos de percepciones sensoriales, con el fin de acomodarse a las diferentes discapacidades."
+                                        },
+                                        {
+                                            "handle": "Decoración, Formato, Invisible",
+                                            "text": "Si el contenido no textual es simple decoración, se utiliza únicamente para definir el formato visual o no se presenta a los usuarios, entonces se implementa de forma que pueda ser ignorado por las ayudas técnicas."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:media-equiv",
+                    "num": "1.2",
+                    "handle": "Medios tempodependientes",
+                    "text": "Proporcionar alternativas para los medios tempodependientes.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:media-equiv-sign",
+                            "num": "1.2.1",
+                            "handle": "Sólo audio y sólo vídeo (grabado)",
+                            "text": "Para contenido sólo audio grabado y contenido sólo vídeo grabado, se cumple lo siguiente, excepto cuando el audio o el vídeo es un contenido multimedia alternativo al texto y está claramente identificado como tal:",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Sólo audio grabado",
+                                            "text": "Se proporciona una alternativa para los medios tempodependientes que presenta información equivalente para el contenido sólo audio grabado."
+                                        },
+                                        {
+                                            "handle": "Sólo vídeo grabado",
+                                            "text": "Se proporciona una alternativa para los medios tempodependientes o se proporciona una pista sonora que presenta información equivalente al contenido del medio de sólo vídeo grabado."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-extended-ad",
+                            "num": "1.2.2",
+                            "handle": "Subtítulos (grabados)",
+                            "text": "Se proporcionan subtítulos para el contenido de audio grabado dentro de contenido multimedia sincronizado, excepto cuando la presentación es un contenido multimedia alternativo al texto y está claramente identificado como tal.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-text-doc",
+                            "num": "1.2.3",
+                            "handle": "Audiodescripción o Medio Alternativo (grabado)",
+                            "text": "Se proporciona una alternativa para los medios tempodependientes o una audiodescripción para el contenido de vídeo grabado en los multimedia sincronizados, excepto cuando ese contenido es un contenido multimedia alternativo al texto y está claramente identificado como tal.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-live-audio-only",
+                            "num": "1.2.4",
+                            "handle": "Subtítulos (en directo)",
+                            "text": "Se proporcionan subtítulos para todo el contenido de audio en directo de los multimedia sincronizados.",
+                            "level": "AA"
+                        },
+                        {
+                            "num": "1.2.5",
+                            "handle": "Audiodescripción (grabado)",
+                            "text": "Se proporciona una audiodescripción para todo el contenido de vídeo grabado dentro de contenido multimedia sincronizado.",
+                            "level": "AA"
+                        },
+                        {
+                            "num": "1.2.6",
+                            "handle": "Lengua de señas (grabado)",
+                            "text": "Se proporciona una interpretación en lengua de señas para todo el contenido de audio grabado dentro de contenido multimedia sincronizado.",
+                            "level": "AAA"
+                        },
+                        {
+                            "num": "1.2.7",
+                            "handle": "Audiodescripción ampliada (grabada)",
+                            "text": "Cuando las pausas en el audio de primer plano son insuficientes para permitir que la audiodescripción comunique el significado del vídeo, se proporciona una audiodescripción ampliada para todos los contenidos de vídeo grabado dentro de contenido multimedia sincronizado.",
+                            "level": "AAA"
+                        },
+                        {
+                            "num": "1.2.8",
+                            "handle": "Medio alternativo (grabado)",
+                            "text": "Se proporciona una alternativa para los medios tempodependientes, tanto para todos los contenidos multimedia sincronizados grabados como para todos los medios de sólo vídeo grabado.",
+                            "level": "AAA"
+                        },
+                        {
+                            "num": "1.2.9",
+                            "handle": "Sólo audio (en directo)",
+                            "text": "Se proporciona una alternativa para los medios tempodependientes que presenta información equivalente para el contenido de sólo audio en directo.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:content-structure-separation",
+                    "num": "1.3",
+                    "handle": "Adaptable",
+                    "text": "Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:content-structure-separation-programmatic",
+                            "num": "1.3.1",
+                            "handle": "Información y relaciones",
+                            "text": "La información, estructura y relaciones comunicadas a través de la presentación pueden ser determinadas por software o están disponibles como texto.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:content-structure-separation-sequence",
+                            "num": "1.3.2",
+                            "handle": "Secuencia significativa",
+                            "text": "Cuando la secuencia en que se presenta el contenido afecta a su significado, se puede determinar por software la secuencia correcta de lectura.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:content-structure-separation-understanding",
+                            "num": "1.3.3",
+                            "handle": "Características sensoriales",
+                            "text": "Las instrucciones proporcionadas para entender y operar el contenido no dependen exclusivamente en las características sensoriales de los componentes como su forma, tamaño, ubicación visual, orientación o sonido.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "Para los requisitos relacionados con el color, véase la Pauta 1.4."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:visual-audio-contrast",
+                    "num": "1.4",
+                    "handle": "Distinguible",
+                    "text": "Facilitar a los usuarios ver y oír el contenido, incluyendo la separación entre el primer plano y el fondo.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:visual-audio-contrast7",
+                            "num": "1.4.1",
+                            "handle": "Uso del color",
+                            "text": "El color no se usa como único medio visual para transmitir la información, indicar una acción, solicitar una respuesta o distinguir un elemento visual.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "Este criterio de conformidad trata específicamente acerca de la percepción del color. En la Pauta 1.3 se recogen otras formas de percepción, incluyendo el acceso por software al color y a otros códigos de presentación visual."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast-noaudio",
+                            "num": "1.4.2",
+                            "handle": "Control del audio",
+                            "text": "Si el audio de una página web suena automáticamente durante más de 3 segundos, se proporciona ya sea un mecanismo para pausar o detener el audio, o un mecanismo para controlar el volumen del sonido que es independiente del nivel de volumen global del sistema.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "En la medida en que cualquier contenido que no satisfaga este criterio puede interferir con la capacidad del usuario de emplear la página en su conjunto, todo contenido de la página web (tanto si satisface o no otros criterios de conformidad) debe satisfacer este criterio. Véase Requisito de Conformidad 5: Sin interferencia."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast-visual-presentation",
+                            "num": "1.4.3",
+                            "handle": "Contraste (mínimo)",
+                            "text": "La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 4.5:1, excepto en los siguientes casos:",
+                            "level": "AA",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Textos grandes",
+                                            "text": "Los textos de gran tamaño y las imágenes de texto de gran tamaño tienen una relación de contraste de, al menos, 3:1."
+                                        },
+                                        {
+                                            "handle": "Incidental",
+                                            "text": "Los textos o imágenes de texto que forman parte de un componente inactivo de la interfaz de usuario, que son simple decoración, que no resultan visibles para nadie o forman parte de una imagen que contiene otros elementos visuales significativos, no tienen requisitos de contraste."
+                                        },
+                                        {
+                                            "handle": "Logotipos",
+                                            "text": "El texto que forma parte de un logo o nombre de marca no tiene requisitos de contraste mínimo."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast-text-images",
+                            "num": "1.4.4",
+                            "handle": "Cambio de tamaño del texto",
+                            "text": "A excepción de los subtítulos y las imágenes de texto, todo el texto puede ser ajustado sin ayudas técnicas hasta un 200 por ciento sin que se pierdan el contenido o la funcionalidad.",
+                            "level": "AA"
+                        },
+                        {
+                            "num": "1.4.5",
+                            "handle": "Imágenes de texto",
+                            "text": "Si con las tecnologías que se están utilizando se puede conseguir la presentación visual deseada, se utiliza texto para transmitir la información en vez de imágenes de texto, excepto en los siguientes casos.",
+                            "level": "AA",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Configurable",
+                                            "text": "La imagen de texto es visualmente configurable según los requisitos del usuario."
+                                        },
+                                        {
+                                            "handle": "Esencial",
+                                            "text": "Una forma particular de presentación del texto resulta esencial para la información que se transmite."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "Los logotipos (textos que son parte de un logo o de un nombre de marca) se consideran esenciales."
+                                }
+                            ]
+                        },
+                        {
+                            "num": "1.4.6",
+                            "handle": "Contraste (mejorado)",
+                            "text": "La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 7:1, excepto en los siguientes casos.",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Textos grandes",
+                                            "text": "Los textos de gran tamaño y las imágenes de texto de gran tamaño tienen una relación de contraste de, al menos, 4.5:1."
+                                        },
+                                        {
+                                            "handle": "Incidental",
+                                            "text": "Los textos o imágenes de texto que forman parte de un componente de la interfaz de usuario inactivo, que son simple decoración, que no resultan visibles para nadie o forman parte de una imagen que contiene otros elementos visuales significativos, no tienen requisitos de contraste."
+                                        },
+                                        {
+                                            "handle": "Logotipos",
+                                            "text": "El texto que forma parte de un logo o nombre de marca no tiene requisitos de contraste mínimo."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "num": "1.4.7",
+                            "handle": "Sonido de fondo bajo o ausente",
+                            "text": "Para el contenido de sólo audio grabado que (1) contiene habla en primer plano, (2) no es un CAPTCHA sonoro o un audiologo, y (3) que no es una vocalización cuya intención principal es servir como expresión musical (como el canto o el rap), se cumple al menos uno de los siguientes casos:",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Ningún sonido de fondo",
+                                            "text": "El audio no contiene sonidos de fondo."
+                                        },
+                                        {
+                                            "handle": "Apagar",
+                                            "text": "Los sonidos de fondo pueden ser apagados."
+                                        },
+                                        {
+                                            "handle": "20 dB",
+                                            "text": "Los sonidos de fondo son, al menos, 20 decibelios más bajos que el discurso en primer plano, con la excepción de sonidos ocasionales que duran solamente uno o dos segundos. Nota: Por la definición de \"decibelio\", el sonido de fondo que cumple con este requisito es aproximadamente cuatro veces más silencioso que la locución principal."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "Por la definición de \"decibelio\", el sonido de fondo que cumple con este requisito es aproximadamente cuatro veces más silencioso que la locución principal."
+                                }
+                            ]
+                        },
+                        {
+                            "num": "1.4.8",
+                            "handle": "Presentación visual",
+                            "text": "En la presentación visual de bloques de texto, se proporciona algún mecanismo para lograr lo siguiente:",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "olist",
+                                    "items": [
+                                        {
+                                            "handle": "",
+                                            "text": "Los colores de fondo y primer plano pueden ser elegidos por el usuario."
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "El ancho no es mayor de 80 caracteres o signos (40 si es CJK)."
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "El texto no está justificado (alineado a los márgenes izquierdo y derecho a la vez)."
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "El espacio entre líneas (interlineado) es de, al menos, un espacio y medio dentro de los párrafos y el espacio entre párrafos es, al menos, 1.5 veces mayor que el espacio entre líneas."
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "El texto se ajusta sin ayudas técnicas hasta un 200 por ciento de modo tal que no requiere un desplazamiento horizontal para leer una línea de texto en una ventana a pantalla completa."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "num": "1.4.9",
+                            "handle": "Imágenes de texto (sin excepciones)",
+                            "text": "Las imágenes de texto sólo se utilizan como simple decoración o cuando una forma de presentación particular del texto resulta esencial para la información transmitida.",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "Los logotipos (textos que son parte de un logo o de un nombre de marca) se consideran esenciales."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "WCAG2:operable",
+            "num": "2",
+            "handle": "Operable",
+            "text": "Los componentes de la interfaz de usuario y la navegación deben ser operables.",
+            "guidelines": [
+                {
+                    "id": "WCAG2:keyboard-operation",
+                    "num": "2.1",
+                    "handle": "Accesible por teclado",
+                    "text": "Proporcionar acceso a toda la funcionalidad mediante el teclado.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:keyboard-operation-all-funcs",
+                            "num": "2.1.1",
+                            "handle": "Teclado",
+                            "text": "Toda la funcionalidad del contenido es operable a través de una interfaz de teclado sin que se requiera una determinada velocidad para cada pulsación individual de las teclas, excepto cuando la función interna requiere de una entrada que depende del trayecto de los movimientos del usuario y no sólo de los puntos inicial y final.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Nota 1",
+                                    "text": "Esta excepción se refiere a la función subyacente, no a la técnica de entrada de datos. Por ejemplo, si la entrada de texto se hace por medio de escritura a mano, la técnica de entrada (escritura a mano) depende del trazo (ruta trazada) pero la función interna (introducir texto) no."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Nota 2",
+                                    "text": "Esto no prohíbe ni debería desanimar a los autores a proporcionar entrada de ratón u otros métodos de entrada de datos adicionales a la operabilidad a través del teclado."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:keyboard-operation-trapping",
+                            "num": "2.1.2",
+                            "handle": "Sin trampas para el foco del teclado",
+                            "text": "Si es posible mover el foco a un componente de la página usando una interfaz de teclado, entonces el foco se puede quitar de ese componente usando sólo la interfaz de teclado y, si se requiere algo más que las teclas de dirección o de tabulación, se informa al usuario el método apropiado para mover el foco.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "En la medida en que cualquier contenido que no satisfaga este criterio puede interferir con la capacidad del usuario para emplear la página por completo, todo contenido de la página web (tanto si satisface o no otros criterios de conformidad) debe satisfacer este criterio. Véase Requisito de Conformidad 5: Sin interferencia."
+                                }
+                            ]
+                        },
+                        {
+                            "num": "2.1.3",
+                            "handle": "Teclado (sin excepciones)",
+                            "text": "Toda la funcionalidad del contenido se puede operar a través de una interfaz de teclado sin requerir una determinada velocidad en la pulsación de las teclas.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:time-limits",
+                    "num": "2.2",
+                    "handle": "Tiempo suficiente",
+                    "text": "Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:time-limits-no-exceptions",
+                            "num": "2.2.1",
+                            "handle": "Tiempo ajustable",
+                            "text": "Para cada límite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos:",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Apagar",
+                                            "text": "El usuario puede detener el límite de tiempo antes de alcanzar el límite de tiempo; o"
+                                        },
+                                        {
+                                            "handle": "Ajustar",
+                                            "text": "El usuario puede ajustar el límite de tiempo antes de alcanzar dicho límite en un rango amplio que es, al menos, diez veces mayor al tiempo fijado originalmente; o"
+                                        },
+                                        {
+                                            "handle": "Extender",
+                                            "text": "Se advierte al usuario antes de que el tiempo expire y se le conceden al menos 20 segundos para extender el límite temporal con una acción simple (por ejemplo, \"presione la barra de espacio\") y el usuario puede extender ese límite de tiempo al menos diez veces; o"
+                                        },
+                                        {
+                                            "handle": "Excepción de tiempo real",
+                                            "text": "El límite de tiempo es un requisito que forma parte de un evento en tiempo real (por ejemplo, una subasta) y no resulta posible ofrecer una alternativa al límite de tiempo; o"
+                                        },
+                                        {
+                                            "handle": "Excepción por ser esencial",
+                                            "text": "El límite de tiempo es esencial y, si se extendiera, invalidaría la actividad; o"
+                                        },
+                                        {
+                                            "handle": "Excepción de 20 horas",
+                                            "text": "El límite de tiempo es mayor a 20 horas."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "Este criterio de conformidad ayuda a asegurarse de que los usuarios puedan completar una tarea sin cambios inesperados en el contenido o contexto que sean el resultado de un límite de tiempo. Este criterio de conformidad debe considerarse en combinación con el Criterio de Conformidad 3.2.1, que impone límites a los cambios de contenido o contexto como resultado de una acción del usuario."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:time-limits-postponed",
+                            "num": "2.2.2",
+                            "handle": "Poner en pausa, detener, ocultar",
+                            "text": "Para la información que tiene movimiento, parpadeo, se desplaza o se actualiza automáticamente, se cumplen todos los casos siguientes:",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Movimiento, parpadeo, desplazamiento",
+                                            "text": "Para toda información que se mueve, parpadea o se desplaza, que (1) comienza automáticamente, (2) dura más de cinco segundos y (3) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario la pueda poner en pausa, detener u ocultar, a menos que el movimiento, parpadeo o desplazamiento sea parte esencial de una actividad; y"
+                                        },
+                                        {
+                                            "handle": "Actualización automática",
+                                            "text": "Para toda información que se actualiza automáticamente, que (1) se inicia automáticamente y (2) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario la pueda poner en pausa, detener u ocultar, o controlar la frecuencia de actualización a menos que la actualización automática sea parte esencial de una actividad."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Nota 1",
+                                    "text": "Para los requisitos relacionados con el parpadeo o el destello de contenido, véase la Pauta 2.3."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Nota 2",
+                                    "text": "En la medida en que cualquier contenido que no satisfaga este criterio puede interferir con la capacidad del usuario para emplear la página como un todo, todo contenido de la página web (tanto si satisface o no otros criterios de conformidad) debe satisfacer este criterio. Véase Requisito de Conformidad 5: Sin interferencia."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Nota 3",
+                                    "text": "Para el contenido que es actualizado periódicamente por medio de un software, o que se sirve a la aplicación de usuario por medio de streaming, no hay obligación de preservar o presentar la información que ha sido generada o recibida entre el inicio de la pausa y el reinicio de la presentación; no sólo podría no ser técnicamente posible, sino que además en muchas ocasiones podría ser erróneo o engañoso hacerlo."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Nota 4",
+                                    "text": "Una animación que ocurre como parte de una fase de precarga de un contenido o una situación similar puede ser considerada esencial si no se permite interacción a ningún usuario durante esa fase, y si el hecho de no indicar el progreso pudiera confundir a los usuarios y hacerles creer que ha habido un fallo en el contenido."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:time-limits-server-timeout",
+                            "num": "2.2.3",
+                            "handle": "Sin tiempo",
+                            "text": "El tiempo no es parte esencial del evento o actividad presentada por el contenido, exceptuando los multimedia sincronizados no interactivos y los eventos en tiempo real.",
+                            "level": "AAA"
+                        },
+                        {
+                            "num": "2.2.4",
+                            "handle": "Interrupciones",
+                            "text": "El usuario puede postergar o suprimir las interrupciones, excepto cuando las interrupciones implican una emergencia.",
+                            "level": "AAA"
+                        },
+                        {
+                            "num": "2.2.5",
+                            "handle": "Re-autentificación",
+                            "text": "Cuando expira una sesión autentificada, el usuario puede continuar la actividad sin pérdida de datos tras volver a identificarse.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:seizure",
+                    "num": "2.3",
+                    "handle": "Convulsiones",
+                    "text": "No diseñar contenido de un modo que se sepa podría provocar ataques, espasmos o convulsiones.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:seizure-three-times",
+                            "num": "2.3.1",
+                            "handle": "Umbral de tres destellos o menos",
+                            "text": "Las páginas web no contienen nada que destelle más de tres veces en un segundo, o el destello está por debajo del umbral de destello general y de destello rojo.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "En la medida en que cualquier contenido que no satisfaga este criterio puede interferir con la capacidad del usuario para emplear la página como un todo, todo contenido de la página web (tanto si satisface o no otros criterios de conformidad) debe satisfacer este criterio. Véase Requisito de Conformidad 5: Sin interferencia."
+                                }
+                            ]
+                        },
+                        {
+                            "num": "2.3.2",
+                            "handle": "Tres destellos",
+                            "text": "Las páginas web no contienen nada que destelle más de tres veces por segundo.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:navigation-mechanisms",
+                    "num": "2.4",
+                    "handle": "Navegable",
+                    "text": "Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:navigation-mechanisms-location",
+                            "num": "2.4.1",
+                            "handle": "Evitar bloques",
+                            "text": "Existe un mecanismo para evitar los bloques de contenido que se repiten en múltiples páginas web.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-link",
+                            "num": "2.4.2",
+                            "handle": "Titulado de páginas",
+                            "text": "Las páginas web tienen títulos que describen su temática o propósito.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-headings",
+                            "num": "2.4.3",
+                            "handle": "Orden del foco",
+                            "text": "Si se puede navegar secuencialmente por una página web y la secuencia de navegación afecta su significado o su operación, los componentes que pueden recibir el foco lo hacen en un orden que preserva su significado y operabilidad.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-refs",
+                            "num": "2.4.4",
+                            "handle": "Propósito de los enlaces (en contexto)",
+                            "text": "El propósito de cada enlace puede ser determinado con sólo el texto del enlace o a través del texto del enlace sumado al contexto del enlace determinado por software, excepto cuando el propósito del enlace resultara ambiguo para los usuarios en general.",
+                            "level": "A"
+                        },
+                        {
+                            "num": "2.4.5",
+                            "handle": "Múltiples vías",
+                            "text": "Se proporciona más de un camino para localizar una página web dentro de un conjunto de páginas web, excepto cuando la página es el resultado, o un paso intermedio, de un proceso.",
+                            "level": "AA"
+                        },
+                        {
+                            "num": "2.4.6",
+                            "handle": "Encabezados y etiquetas",
+                            "text": "Los encabezados y etiquetas describen el tema o propósito.",
+                            "level": "AA"
+                        },
+                        {
+                            "num": "2.4.7",
+                            "handle": "Foco visible",
+                            "text": "Cualquier interfaz de usuario operable por teclado tiene una forma de operar en la cuál el indicador del foco del teclado resulta visible.",
+                            "level": "AA"
+                        },
+                        {
+                            "num": "2.4.8",
+                            "handle": "Ubicación",
+                            "text": "Se proporciona información acerca de la ubicación del usuario dentro de un conjunto de páginas web.",
+                            "level": "AAA"
+                        },
+                        {
+                            "num": "2.4.9",
+                            "handle": "Propósito de los enlaces (sólo enlaces)",
+                            "text": "Se proporciona un mecanismo que permite identificar el propósito de cada enlace con sólo el texto del enlace, excepto cuando el propósito del enlace resultara ambiguo para los usuarios en general.",
+                            "level": "AAA"
+                        },
+                        {
+                            "num": "2.4.10",
+                            "handle": "Encabezados de sección",
+                            "text": "Se usan encabezados de sección para organizar el contenido.",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Nota 1",
+                                    "text": "\"Encabezados\" se usa en sentido general e incluye los títulos y otras formas de agregar encabezados a las distintos tipos de contenido."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Nota 2",
+                                    "text": "Este criterio de conformidad se refiere al contenido propiamente dicho, no a los componentes de la interfaz de usuario. Los componentes de la interfaz de usuario se tratan en el Criterio de Conformidad 4.1.2."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "WCAG2:understandable",
+            "num": "3",
+            "handle": "Comprensible",
+            "text": "La información y el manejo de la interfaz de usuario deben ser comprensibles.",
+            "guidelines": [
+                {
+                    "id": "WCAG2:meaning",
+                    "num": "3.1",
+                    "handle": "Legible",
+                    "text": "Hacer que los contenidos textuales resulten legibles y comprensibles.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:meaning-idioms",
+                            "num": "3.1.1",
+                            "handle": "Idioma de la página",
+                            "text": "El idioma predeterminado de cada página web puede ser determinado por software.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:meaning-located",
+                            "num": "3.1.2",
+                            "handle": "Idioma de las partes",
+                            "text": "El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, términos técnicos, palabras en un idioma indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:meaning-supplements",
+                            "num": "3.1.3",
+                            "handle": "Palabras inusuales",
+                            "text": "Se proporciona un mecanismo para identificar las definiciones específicas de palabras o frases usadas de modo inusual o restringido, incluyendo expresiones idiomáticas y jerga.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:meaning-pronunciation",
+                            "num": "3.1.4",
+                            "handle": "Abreviaturas",
+                            "text": "Se proporciona un mecanismo para identificar la forma expandida o el significado de las abreviaturas.",
+                            "level": "AAA"
+                        },
+                        {
+                            "num": "3.1.5",
+                            "handle": "Nivel de lectura",
+                            "text": "Cuando un texto requiere un nivel de lectura más avanzado que el nivel mínimo de educación secundaria una vez que se han eliminado nombres propios y títulos, se proporciona un contenido suplementario o una versión que no requiere un nivel de lectura mayor a ese nivel educativo.",
+                            "level": "AAA"
+                        },
+                        {
+                            "num": "3.1.6",
+                            "handle": "Pronunciación",
+                            "text": "Se proporciona un mecanismo para identificar la pronunciación específica de las palabras cuando el significado de esas palabras, dentro del contexto, resulta ambiguo si no se conoce su pronunciación.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:consistent-behavior",
+                    "num": "3.2",
+                    "handle": "Predecible",
+                    "text": "Hacer que las páginas web aparezcan y operen de manera predecible.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:consistent-behavior-no-extreme-changes-context",
+                            "num": "3.2.1",
+                            "handle": "Al recibir el foco",
+                            "text": "Cuando cualquier componente recibe el foco, no inicia ningún cambio en el contexto.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:consistent-behavior-consistent-functionality",
+                            "num": "3.2.2",
+                            "handle": "Al recibir entradas",
+                            "text": "El cambio de estado en cualquier componente de la interfaz de usuario no provoca automáticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese comportamiento antes de usar el componente.",
+                            "level": "A"
+                        },
+                        {
+                            "num": "3.2.3",
+                            "handle": "Navegación coherente",
+                            "text": "Los mecanismos de navegación que se repiten en múltiples páginas web dentro de un conjunto de páginas web aparecen siempre en el mismo orden relativo cada vez que se repiten, a menos que el cambio sea provocado por el propio usuario.",
+                            "level": "AA"
+                        },
+                        {
+                            "num": "3.2.4",
+                            "handle": "Identificación coherente",
+                            "text": "Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web son identificados de manera coherente.",
+                            "level": "AA"
+                        },
+                        {
+                            "num": "3.2.5",
+                            "handle": "Cambios a petición",
+                            "text": "Los cambios en el contexto son iniciados únicamente a solicitud del usuario o se proporciona un mecanismo para detener tales cambios.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:minimize-error",
+                    "num": "3.3",
+                    "handle": "Entrada de datos asistida",
+                    "text": "Ayudar a los usuarios a evitar y corregir los errores.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:minimize-error-context-help",
+                            "num": "3.3.1",
+                            "handle": "Identificación de errores",
+                            "text": "Si se detecta automáticamente un error en la entrada de datos, el elemento erróneo es identificado y el error se describe al usuario mediante un texto.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:minimize-error-reversible-all",
+                            "num": "3.3.2",
+                            "handle": "Etiquetas o instrucciones",
+                            "text": "Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducción de datos por parte del usuario.",
+                            "level": "A"
+                        },
+                        {
+                            "num": "3.3.3",
+                            "handle": "Sugerencias ante errores",
+                            "text": "Si se detecta automáticamente un error en la entrada de datos y se dispone de sugerencias para hacer la corrección, entonces se presentan las sugerencias al usuario, a menos que esto ponga en riesgo la seguridad o el propósito del contenido.",
+                            "level": "AA"
+                        },
+                        {
+                            "num": "3.3.4",
+                            "handle": "Prevención de errores (legales, financieros, datos)",
+                            "text": "Para las páginas web que representan para el usuario compromisos legales o transacciones financieras; que modifican o eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que envían las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos.",
+                            "level": "AA",
+                            "details": [
+                                {
+                                    "type": "olist",
+                                    "items": [
+                                        {
+                                            "handle": "Reversible",
+                                            "text": "El envío es reversible."
+                                        },
+                                        {
+                                            "handle": "Revisado",
+                                            "text": "Se verifica la información para detectar errores en la entrada de datos y se proporciona al usuario una oportunidad de corregirlos."
+                                        },
+                                        {
+                                            "handle": "Confirmado",
+                                            "text": "Se proporciona un mecanismo para revisar, confirmar y corregir la información antes de finalizar el envío de los datos."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "num": "3.3.5",
+                            "handle": "Ayuda",
+                            "text": "Se proporciona ayuda dependiente del contexto .",
+                            "level": "AAA"
+                        },
+                        {
+                            "num": "3.3.6",
+                            "handle": "Prevención de errores (todos)",
+                            "text": "Para las páginas web que requieren al usuario el envío de información, se cumple al menos uno de los siguientes casos.",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "olist",
+                                    "items": [
+                                        {
+                                            "handle": "Reversible",
+                                            "text": "El envío es reversible."
+                                        },
+                                        {
+                                            "handle": "Revisado",
+                                            "text": "Se verifica la información para detectar errores en la entrada de datos y se proporciona al usuario una oportunidad de corregirlos."
+                                        },
+                                        {
+                                            "handle": "Confirmado",
+                                            "text": "Se proporciona un mecanismo para revisar, confirmar y corregir la información antes de finalizar el envío de los datos."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "WCAG2:robust",
+            "num": "4",
+            "handle": "Robusto",
+            "text": "El contenido debe ser suficientemente robusto como para ser interpretado de forma fiable por una amplia variedad de aplicaciones de usuario, incluyendo las ayudas técnicas.",
+            "guidelines": [
+                {
+                    "id": "WCAG2:ensure-compat",
+                    "num": "4.1",
+                    "handle": "Compatible",
+                    "text": "Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:ensure-compat-parses",
+                            "num": "4.1.1",
+                            "handle": "Procesamiento",
+                            "text": "En los contenidos implementados mediante el uso de lenguajes de marcas, los elementos tienen las etiquetas de apertura y cierre completas; los elementos están anidados de acuerdo a sus especificaciones; los elementos no contienen atributos duplicados y los ID son únicos, excepto cuando las especificaciones permitan estas características.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "Las etiquetas de apertura y cierre a las que les falte un carácter crítico para su formación, como un signo de \"mayor qué\", o en las que falten las comillas de apertura o cierre en el valor de un atributo, no se consideran completas."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:ensure-compat-rsv",
+                            "num": "4.1.2",
+                            "handle": "Nombre, función, valor",
+                            "text": "Para todos los componentes de la interfaz de usuario (incluyendo pero no limitado a: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la función pueden ser determinados por software; los estados, propiedades y valores que pueden ser asignados por el usuario pueden ser especificados por software; y los cambios en estos elementos se encuentran disponibles para su consulta por las aplicaciones de usuario, incluyendo las ayudas técnicas.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Nota",
+                                    "text": "Este criterio de conformidad se dirige principalmente a los autores web que desarrollan o programan sus propios componentes de interfaz de usuario. Por ejemplo, los controles estándar de HTML satisfacen automáticamente este criterio cuando se emplean de acuerdo con su especificación."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
