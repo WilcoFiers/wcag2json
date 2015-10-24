@@ -1,13 +1,13 @@
 // Import libraries
-var request   = require('request');
-var cheerio   = require('cheerio');
-var fs        = require('fs');
-var parseWcag = require('../parseWcag');
+let request   = require('request');
+let cheerio   = require('cheerio');
+let fs        = require('fs');
+let parseWcag = require('../lib/parseWcag');
 
 // Set up some data
-var translationUrls = require('../translations.json');
-var currLang        = 'nl';
-var filePath        = './html/wcag2-' + currLang + '.html';
+let translationUrls = require('../translations.json');
+let currLang        = 'nl';
+let filePath        = './html/wcag2-' + currLang + '.html';
 
 
 // Check if we know the file already
@@ -29,7 +29,7 @@ new Promise(function (resolve, reject) {
 
         } else {
             // Load from URL and store locally
-            var url = translationUrls[currLang];
+            let url = translationUrls[currLang];
             console.log('loading ' + url);
 
             request(url, function (error, response, html) {
