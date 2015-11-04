@@ -59,7 +59,7 @@
                     "text": "Stellen Sie Alternativen für zeitbasierte Medien zur Verfügung.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:media-equiv-sign",
+                            "id": "WCAG2:media-equiv-av-only-alt",
                             "num": "1.2.1",
                             "handle": "Reine Audio- und Videoinhalte (aufgezeichnet)",
                             "text": "Für aufgezeichnete reine Audio- und aufgezeichnete reine Video- Medien gilt das Folgende, außer die Audio- oder Videomedien sind eine Medienalternative für Text und als solche klar gekennzeichnet:",
@@ -81,51 +81,56 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:media-equiv-extended-ad",
+                            "id": "WCAG2:media-equiv-captions",
                             "num": "1.2.2",
                             "handle": "Untertitel (aufgezeichnet)",
                             "text": "Untertitel werden für alle aufgezeichneten Audioinhalte in synchronisierten Medien bereitgestellt, außer die Medien sind eine Medienalternative für Text und als solche deutlich gekennzeichnet.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:media-equiv-text-doc",
+                            "id": "WCAG2:media-equiv-audio-desc",
                             "num": "1.2.3",
                             "handle": "Audiodeskription oder Medienalternative (aufgezeichnet)",
                             "text": "Eine Alternative für zeitbasierte Medien oder eine Audiodeskription des aufgezeichneten Videoinhalts wird für synchronisierte Medien bereitgestellt, außer die Medien sind eine Medienalternative für Text und als solche deutlich gekennzeichnet.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:media-equiv-live-audio-only",
+                            "id": "WCAG2:media-equiv-real-time-captions",
                             "num": "1.2.4",
                             "handle": "Untertitel (Live)",
                             "text": "Untertitel werden für alle Live- Audioinhalte in synchronisierten Medien bereitgestellt.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:media-equiv-audio-desc-only",
                             "num": "1.2.5",
                             "handle": "Audiodeskription (aufgezeichnet)",
                             "text": "Eine Audiodeskription wird für alle aufgezeichneten Videoinhalte in synchronisierten Medien zur Verfügung gestellt.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:media-equiv-sign",
                             "num": "1.2.6",
                             "handle": "Gebärdensprache (aufgezeichnet)",
                             "text": "Eine Übersetzung in die Gebärdensprache wird für alle aufgezeichneten Audioinhalte in synchronisierten Medien bereitgestellt.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:media-equiv-extended-ad",
                             "num": "1.2.7",
                             "handle": "Erweiterte Audiodeskription (aufgezeichnet)",
                             "text": "Wenn die Pausen im Vordergrund-Audio nicht ausreichend sind, um Audiodeskriptionen zu ermöglichen, die den Sinn des Videos vermitteln, dann wird eine erweiterte Audiodeskription für alle aufgezeichneten Videoinhalte in synchronisierten Medien bereitgestellt.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:media-equiv-text-doc",
                             "num": "1.2.8",
                             "handle": "Medienalternative (aufgezeichnet)",
                             "text": "Eine Alternative für zeitbasierte Medien wird für alle aufgezeichneten synchronisierten Medien und für alle aufgezeichneten reinen Videomedien bereitgestellt.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:media-equiv-live-audio-only",
                             "num": "1.2.9",
                             "handle": "Reiner Audioinhalt (Live)",
                             "text": "Eine Alternative für zeitbasierte Medien, die äquivalente Informationen für live übertragene reine Audioinhalte bietet, wird bereitgestellt.",
@@ -176,7 +181,7 @@
                     "text": "Machen Sie es Benutzern leichter, Inhalt zu sehen und zu hören einschließlich der Trennung von Vorder- und Hintergrund.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:visual-audio-contrast7",
+                            "id": "WCAG2:visual-audio-contrast-without-color",
                             "num": "1.4.1",
                             "handle": "Benutzung von Farbe",
                             "text": "Farbe wird nicht als einziges visuelles Mittel benutzt, um Informationen zu vermitteln, eine Handlung zu kennzeichnen, eine Reaktion zu veranlassen oder ein visuelles Element zu unterscheiden.",
@@ -190,7 +195,7 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:visual-audio-contrast-noaudio",
+                            "id": "WCAG2:visual-audio-contrast-dis-audio",
                             "num": "1.4.2",
                             "handle": "Audio-Steuerelement",
                             "text": "Wenn Audioinhalt auf einer Webseite automatisch für mehr als 3 Sekunden abgespielt wird, dann gibt es entweder einen Mechanismus, um die Wiedergabe zu pausieren oder zu beenden, oder es gibt einen Mechanismus, um die Lautstärke unabhängig von der allgemeinen Systemlautstärke zu regeln.",
@@ -204,7 +209,7 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:visual-audio-contrast-visual-presentation",
+                            "id": "WCAG2:visual-audio-contrast-contrast",
                             "num": "1.4.3",
                             "handle": "Kontrast (Minimum)",
                             "text": "Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1 mit folgenden Ausnahmen:",
@@ -230,13 +235,14 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:visual-audio-contrast-text-images",
+                            "id": "WCAG2:visual-audio-contrast-scale",
                             "num": "1.4.4",
                             "handle": "Textgröße ändern",
                             "text": "Mit Ausnahme von Untertiteln und Bildern eines Textes, kann Text ohne assistierende Technik um bis zu 200 Prozent geändert werden, ohne dass dabei Inhalt oder Funktionalität verloren geht.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:visual-audio-contrast-text-presentation",
                             "num": "1.4.5",
                             "handle": "Bilder eines Textes",
                             "text": "Wenn die benutzten Techniken die visuelle Präsentation bewirken können, dann wird Text statt Bilder eines Textes dazu benutzt, Informationen zu vermitteln mit den folgenden Ausnahmen:",
@@ -263,6 +269,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:visual-audio-contrast7",
                             "num": "1.4.6",
                             "handle": "Kontrast (erhöht)",
                             "text": "Die visuelle Präsentation von Text und Bildern eines Textes hat ein Kontrastverhältnis von mindestens 7:1, mit folgenden Ausnahmen:",
@@ -288,6 +295,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:visual-audio-contrast-noaudio",
                             "num": "1.4.7",
                             "handle": "Leiser oder kein Hintergrund-Audioinhalt",
                             "text": "Für aufgezeichneten, reinen Audioinhalt, der (1) hauptsächlich Sprache im Vordergrund enthält, (2) kein Audio-CAPTCHA oder ein Audio-Logo ist und (3) bei dem es sich nicht um eine Vokalisierung handelt, die hauptsächlich als musikalischer Ausdruck bestimmt ist wie beispielsweise Singen oder Rappen, gilt mindestens eines der Folgenden:",
@@ -318,6 +326,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:visual-audio-contrast-visual-presentation",
                             "num": "1.4.8",
                             "handle": "Visuelle Präsentation",
                             "text": "Für die visuelle Präsentation von Textblöcken gibt es einen Mechanismus, um das Folgende zu erreichen:",
@@ -351,6 +360,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:visual-audio-contrast-text-images",
                             "num": "1.4.9",
                             "handle": "Bilder eines Textes (keine Ausnahme)",
                             "text": "Bilder eines Textes werden nur rein dekorativ benutzt oder dann, wenn eine bestimmte Präsentation von Text unentbehrlich für die zu vermittelnden Informationen ist.",
@@ -380,7 +390,7 @@
                     "text": "Sorgen Sie dafür, dass alle Funktionalitäten per Tastatur zugänglich sind.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:keyboard-operation-all-funcs",
+                            "id": "WCAG2:keyboard-operation-keyboard-operable",
                             "num": "2.1.1",
                             "handle": "Tastatur",
                             "text": "Alle Funktionalitäten des Inhalts sind durch eine Tastaturschnittstelle bedienbar, ohne dass eine bestimmte Zeiteinteilung für einzelne Tastenanschläge erforderlich ist, außer wenn die zugrunde liegende Funktion Eingaben verlangt, die vom Pfad der Bewegung des Benutzers und nicht nur von den Endpunkten abhängig sind.",
@@ -413,6 +423,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:keyboard-operation-all-funcs",
                             "num": "2.1.3",
                             "handle": "Tastatur (keine Ausnahme)",
                             "text": "Alle Funktionalitäten des Inhalts sind durch eine Tastaturschnittstelle bedienbar, ohne dass eine bestimmte Zeiteinteilung für einzelne Tastenanschläge erforderlich ist.",
@@ -427,7 +438,7 @@
                     "text": "Geben Sie den Benutzern ausreichend Zeit, Inhalte zu lesen und zu benutzen.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:time-limits-no-exceptions",
+                            "id": "WCAG2:time-limits-required-behaviors",
                             "num": "2.2.1",
                             "handle": "Zeiteinteilung anpassbar",
                             "text": "Für jede zeitliche Begrenzung, die vom Inhalt festgelegt wird, gilt mindestens eines der Folgenden:",
@@ -470,7 +481,7 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:time-limits-postponed",
+                            "id": "WCAG2:time-limits-pause",
                             "num": "2.2.2",
                             "handle": "Pausieren, beenden, ausblenden",
                             "text": "Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten alle folgenden Punkte:",
@@ -512,19 +523,21 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:time-limits-server-timeout",
+                            "id": "WCAG2:time-limits-no-exceptions",
                             "num": "2.2.3",
                             "handle": "Keine Zeiteinteilung",
                             "text": "Die Zeiteinteilung ist kein unentbehrlicher Teil eines vom Inhalt dargestellten Ereignisses oder einer Handlung außer bei nicht-interaktiven synchronisierten Medien und Echtzeit-Ereignissen.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:time-limits-postponed",
                             "num": "2.2.4",
                             "handle": "Unterbrechungen",
                             "text": "Unterbrechungen können vom Benutzer aufgeschoben oder unterdrückt werden mit Ausnahme von Unterbrechungen, bei denen es sich um einen Notfall handelt.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:time-limits-server-timeout",
                             "num": "2.2.5",
                             "handle": "Erneute Authentifizierung",
                             "text": "Wenn eine authentifizierte Sitzung abläuft, kann der Benutzer die Handlung nach der erneuten Authentifizierung ohne Datenverlust fortführen.",
@@ -539,7 +552,7 @@
                     "text": "Gestalten Sie Inhalte nicht auf Arten, von denen bekannt ist, dass sie zu Anfällen führen.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:seizure-three-times",
+                            "id": "WCAG2:seizure-does-not-violate",
                             "num": "2.3.1",
                             "handle": "Grenzwert von dreimaligem Blitzen oder weniger",
                             "text": "Webseiten enthalten nichts, was öfter als dreimal in einem beliebigen, eine Sekunde dauernden Zeitraum blitzt, oder der Blitz ist unterhalb der allgemeinen Grenzwerte zu Blitzen und roten Blitzen.",
@@ -553,6 +566,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:seizure-three-times",
                             "num": "2.3.2",
                             "handle": "Drei Blitze",
                             "text": "Webseiten enthalten nichts, das öfter als dreimal in einem beliebigen, eine Sekunde dauernden Zeitraum blitzt.",
@@ -567,21 +581,21 @@
                     "text": "Stellen Sie Mittel zur Verfügung, um Benutzer dabei zu unterstützen zu navigieren, Inhalte zu finden und zu bestimmen, wo sie sich befinden.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:navigation-mechanisms-location",
+                            "id": "WCAG2:navigation-mechanisms-skip",
                             "num": "2.4.1",
                             "handle": "Blöcke umgehen",
                             "text": "Es gibt einen Mechanismus, um Inhaltsblöcke zu umgehen, die auf verschiedenen Webseiten wiederholt werden.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:navigation-mechanisms-link",
+                            "id": "WCAG2:navigation-mechanisms-title",
                             "num": "2.4.2",
                             "handle": "Seite mit Titel versehen",
                             "text": "Webseiten haben einen Titel, der Thema oder Zweck beschreibt.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:navigation-mechanisms-headings",
+                            "id": "WCAG2:navigation-mechanisms-focus-order",
                             "num": "2.4.3",
                             "handle": "Fokus-Reihenfolge",
                             "text": "Wenn eine Webseite der Reihe nach navigiert werden kann und die Reihenfolge der Navigation die Bedeutung oder Bedienung beeinflusst, erhalten fokussierbare Komponenten den Fokus in einer Reihenfolge, der Bedeutung und Bedienbarkeit aufrecht erhält.",
@@ -595,36 +609,42 @@
                             "level": "A"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-mult-loc",
                             "num": "2.4.5",
                             "handle": "Verschiedene Methoden",
                             "text": "Es gibt mehr als eine Methode, um eine Webseite innerhalb eines Satzes von Webseiten zu finden, außer die Webseite ist das Ergebnis oder ein Schritt innerhalb eines Prozesses.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-descriptive",
                             "num": "2.4.6",
                             "handle": "Überschriften und Beschriftungen (Labels)",
                             "text": "Überschriften und Labels beschreiben ein Thema oder einen Zweck.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-focus-visible",
                             "num": "2.4.7",
                             "handle": "Fokus sichtbar",
                             "text": "Jede durch Tastatur bedienbare Benutzerschnittstelle hat einen Bedienmodus, bei dem der Tastaturfokus sichtbar ist.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-location",
                             "num": "2.4.8",
                             "handle": "Position",
                             "text": "Es gibt Informationen zu der Position des Benutzers innerhalb eines Satzes von Webseiten.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-link",
                             "num": "2.4.9",
                             "handle": "Linkzweck (reiner Link)",
                             "text": "Es gibt einen Mechanismus, um den Zweck jedes Links durch den Linktext allein zu erkennen, außer der Linkzweck wäre mehrdeutig für Benutzer im Allgemeinen.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-headings",
                             "num": "2.4.10",
                             "handle": "Abschnittsüberschriften",
                             "text": "Abschnittsüberschriften werden genutzt, um den Inhalt zu gliedern.",
@@ -659,40 +679,42 @@
                     "text": "Machen Sie Inhalt lesbar und verständlich.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:meaning-idioms",
+                            "id": "WCAG2:meaning-doc-lang-id",
                             "num": "3.1.1",
                             "handle": "Sprache der Seite",
                             "text": "Die voreingestellte menschliche Sprache jeder Webseite kann durch Software bestimmt werden.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:meaning-located",
+                            "id": "WCAG2:meaning-other-lang-id",
                             "num": "3.1.2",
                             "handle": "Sprache von Teilen",
                             "text": "Die menschliche Sprache jedes Abschnitts oder jedes Satzes im Inhalt kann durch Software bestimmt werden außer bei Eigennamen, technischen Fachbegriffen, Wörtern einer unklaren Sprache und Wörtern oder Wendungen, die Teil des Jargons des direkt umliegenden Textes geworden sind.",
                             "level": "AA"
                         },
                         {
-                            "id": "WCAG2:meaning-supplements",
+                            "id": "WCAG2:meaning-idioms",
                             "num": "3.1.3",
                             "handle": "Ungewöhnliche Wörter",
                             "text": "Es gibt einen Mechanismus, um spezielle Definitionen von Wörtern oder Wendungen zu erkennen, die auf ungewöhnliche oder eingeschränkte Weise benutzt werden, Idiome und Jargon eingeschlossen.",
                             "level": "AAA"
                         },
                         {
-                            "id": "WCAG2:meaning-pronunciation",
+                            "id": "WCAG2:meaning-located",
                             "num": "3.1.4",
                             "handle": "Abkürzungen",
                             "text": "Es gibt einen Mechanismus, um die ausgeschriebene Form oder Bedeutung von Abkürzungen zu erkennen.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:meaning-supplements",
                             "num": "3.1.5",
                             "handle": "Leseniveau",
                             "text": "Wenn der Text nach der Entfernung von Eigennamen und Titeln Lesefähigkeiten voraussetzt, die über das Niveau der niedrigen, sekundären Schulbildung hinausgehen, dann gibt es ergänzenden Inhalt oder eine Version, die keine über die niedrige, sekundäre Schulbildung hinausgehenden Lesefähigkeiten verlangt.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:meaning-pronunciation",
                             "num": "3.1.6",
                             "handle": "Aussprache",
                             "text": "Es gibt einen Mechanismus, um die bestimmte Aussprache von Wörtern zu erkennen, wenn die Bedeutung der Wörter - im Zusammenhang - mehrdeutig ist, wenn man die Aussprache nicht kennt.",
@@ -707,32 +729,35 @@
                     "text": "Sorgen Sie dafür, dass Webseiten vorhersehbar aussehen und funktionieren.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:consistent-behavior-no-extreme-changes-context",
+                            "id": "WCAG2:consistent-behavior-receive-focus",
                             "num": "3.2.1",
                             "handle": "Bei Fokus",
                             "text": "Wenn irgendein Bestandteil den Fokus erhält, dann löst dies nicht eine Änderung des Kontextes aus.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:consistent-behavior-consistent-functionality",
+                            "id": "WCAG2:consistent-behavior-unpredictable-change",
                             "num": "3.2.2",
                             "handle": "Bei Eingabe",
                             "text": "Die Änderung der Einstellung irgendeines Bestandteils der Benutzerschnittstelle führt nicht automatisch zur Änderung des Kontextes, außer der Benutzer wurde vor Benutzung des Bestandteils auf das Verhalten hingewiesen.",
                             "level": "A"
                         },
                         {
+                            "id": "WCAG2:consistent-behavior-consistent-locations",
                             "num": "3.2.3",
                             "handle": "Konsistente Navigation",
                             "text": "Navigationsmechanismen, die auf mehreren Webseiten innerhalb eines Satzes von Webseiten wiederholt werden, treten jedes Mal, wenn sie wiederholt werden, in der gleichen relativen Reihenfolge auf, außer eine Änderung wird durch den Benutzer ausgelöst.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:consistent-behavior-consistent-functionality",
                             "num": "3.2.4",
                             "handle": "Konsistente Erkennung",
                             "text": "Bestandteile mit der gleichen Funktionalität innerhalb eines Satzes von Webseiten werden konsistent erkannt.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:consistent-behavior-no-extreme-changes-context",
                             "num": "3.2.5",
                             "handle": "Änderung auf Anfrage",
                             "text": "Änderungen des Kontextes werden nur durch Benutzeranfrage ausgelöst oder es gibt einen Mechanismus, um solche Änderungen abzuschalten.",
@@ -747,26 +772,28 @@
                     "text": "Helfen Sie den Benutzern dabei, Fehler zu vermeiden und zu korrigieren.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:minimize-error-context-help",
+                            "id": "WCAG2:minimize-error-identified",
                             "num": "3.3.1",
                             "handle": "Fehlererkennung",
                             "text": "Wenn ein Eingabefehler automatisch erkannt wird, dann wird das fehlerhafte Element identifiziert und der Fehler wird dem Benutzer in Textform beschrieben.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:minimize-error-reversible-all",
+                            "id": "WCAG2:minimize-error-cues",
                             "num": "3.3.2",
                             "handle": "Beschriftungen (Labels) oder Anweisungen",
                             "text": "Wenn der Inhalt eine Eingabe durch den Benutzer verlangt werden Beschriftungen (Labels) oder Anweisungen bereitgestellt.",
                             "level": "A"
                         },
                         {
+                            "id": "WCAG2:minimize-error-suggestions",
                             "num": "3.3.3",
                             "handle": "Fehlerempfehlung",
                             "text": "Wenn ein Eingabefehler automatisch erkannt wird und Korrekturempfehlungen bekannt sind, dann werden diese Empfehlungen dem Benutzer bereitgestellt, außer dies würde die Sicherheit oder den Zweck des Inhalts gefährden.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:minimize-error-reversible",
                             "num": "3.3.4",
                             "handle": "Fehlervermeidung (rechtliche, finanzielle, Daten)",
                             "text": "Für Webseiten, die eine für den Benutzer auftretende rechtliche Verpflichtung oder finanzielle Transaktion zur Folge haben, die Benutzer-gesteuerte Daten in Datenspeicherungssystemen ändern oder löschen oder die Testantworten des Benutzers abschicken, gilt mindestens eines der Folgenden:",
@@ -792,12 +819,14 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:minimize-error-context-help",
                             "num": "3.3.5",
                             "handle": "Hilfe",
                             "text": "Es gibt eine kontextsensitive Hilfe.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:minimize-error-reversible-all",
                             "num": "3.3.6",
                             "handle": "Fehlervermeidung (alle)",
                             "text": "Für Webseiten, die verlangen, dass der Benutzer Informationen absendet, gilt mindestens eines der Folgenden:",

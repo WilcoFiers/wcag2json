@@ -59,7 +59,7 @@
                     "text": "proporcioneu alternatives al multimèdia basat en el temps.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:media-equiv-sign",
+                            "id": "WCAG2:media-equiv-av-only-alt",
                             "num": "1.2.1",
                             "handle": "Només so i només vídeo (preenregistrat)",
                             "text": "els punts següents són certs per a multimèdia en format de només so preenregistrat o de només vídeo preenregistrat, excepte quan el so o el vídeo són una alternativa multimèdia al text i estan clarament etiquetats com a tal:",
@@ -81,51 +81,56 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:media-equiv-extended-ad",
+                            "id": "WCAG2:media-equiv-captions",
                             "num": "1.2.2",
                             "handle": "Subtítols (preenregistrat)",
                             "text": "es proporcionen subtítols per a tot el contingut sonor preenregistrat en el multimèdia sincronitzat, excepte quan el multimèdia és una alternativa multimèdia al text i està clarament etiquetat com a tal.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:media-equiv-text-doc",
+                            "id": "WCAG2:media-equiv-audio-desc",
                             "num": "1.2.3",
                             "handle": "Audiodescripció o alternativa multimèdia (preenregistrada)",
                             "text": "es proporciona una alternativa al multimèdia basat en el temps o una audiodescripció del vídeo preenregistrat per al multimèdia sincronitzat, excepte quan el multimèdia és una alternativa multimèdia al text i està clarament etiquetat com a tal.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:media-equiv-live-audio-only",
+                            "id": "WCAG2:media-equiv-real-time-captions",
                             "num": "1.2.4",
                             "handle": "Subtítols (en directe)",
                             "text": "es proporcionen subtítols per a tot el contingut sonor en directe en el multimèdia sincronitzat.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:media-equiv-audio-desc-only",
                             "num": "1.2.5",
                             "handle": "Audiodescripció (preenregistrada)",
                             "text": "es proporciona una audiodescripció de tot el contingut de vídeo preenregistrat en el multimèdia sincronitzat.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:media-equiv-sign",
                             "num": "1.2.6",
                             "handle": "Llenguatge de signes (preenregistrat)",
                             "text": "es proporciona una interpretació en llenguatge de signes del contingut sonor preenregistrat en el multimèdia sincronitzat.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:media-equiv-extended-ad",
                             "num": "1.2.7",
                             "handle": "Audiodescripció ampliada (preenregistrada)",
                             "text": "es proporciona una audiodescripció ampliada de tot el contingut de vídeo preenregistrat en un multimèdia sincronitzat si les pauses en el contingut sonor de primer pla són insuficients per permetre a les audiodescripcions de transmetre el significat del vídeo.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:media-equiv-text-doc",
                             "num": "1.2.8",
                             "handle": "Alternativa multimèdia (preenregistrada)",
                             "text": "es proporciona una alternativa al multimèdia basat en el temps de tot el multimèdia sincronitzat i de tot el multimèdia en format de només vídeo preenregistrats.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:media-equiv-live-audio-only",
                             "num": "1.2.9",
                             "handle": "Només so (en directe)",
                             "text": "es proporciona una alternativa al multimèdia basat en el temps que presenta informació equivalent al contingut en format de només so en directe.",
@@ -176,7 +181,7 @@
                     "text": "faciliteu que els usuaris puguin veure i escoltar el contingut, inclosa la separació del primer pla i el fons.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:visual-audio-contrast7",
+                            "id": "WCAG2:visual-audio-contrast-without-color",
                             "num": "1.4.1",
                             "handle": "Ús del color",
                             "text": "el color no s'utilitza com a mitjà únic per transmetre informació, per indicar una acció, per sol·licitar una resposta o per diferenciar un element visual.",
@@ -190,7 +195,7 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:visual-audio-contrast-noaudio",
+                            "id": "WCAG2:visual-audio-contrast-dis-audio",
                             "num": "1.4.2",
                             "handle": "Control de so",
                             "text": "en el cas que en una pàgina web hi hagi un so que es reprodueixi automàticament durant més de tres segons, cal posar a disposició de l'usuari o bé un mecanisme per pausar o aturar el so, o bé un mecanisme per controlar el volum que sigui independent del nivell de volum del sistema.",
@@ -204,7 +209,7 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:visual-audio-contrast-visual-presentation",
+                            "id": "WCAG2:visual-audio-contrast-contrast",
                             "num": "1.4.3",
                             "handle": "Contrast (mínim)",
                             "text": "la presentació visual del text i les imatges de text ha de tenir una ràtio de contrast com a mínim de 4,5:1, excepte en els casos següents:",
@@ -230,13 +235,14 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:visual-audio-contrast-text-images",
+                            "id": "WCAG2:visual-audio-contrast-scale",
                             "num": "1.4.4",
                             "handle": "Ajustar la mida del text",
                             "text": "la mida del text s'ha de poder ajustar sense necessitat d'ajudes tècniques fins a un 200%, sense perdre contingut o funcionalitat, excepte en subtítols i imatges de text.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:visual-audio-contrast-text-presentation",
                             "num": "1.4.5",
                             "handle": "Imatges de text",
                             "text": "quan les tecnologies emprades poden oferir una presentació visual, s'ha d'usar text per transmetre informació, millor que imatges de text excepte en els casos següents:",
@@ -263,6 +269,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:visual-audio-contrast7",
                             "num": "1.4.6",
                             "handle": "Contrast (millorat)",
                             "text": "la presentació visual del text i les imatges de text ha de tenir una ràtio de contrast d'almenys 7:1, excepte en els casos següents:",
@@ -288,6 +295,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:visual-audio-contrast-noaudio",
                             "num": "1.4.7",
                             "handle": "So de fons baix o inexistent",
                             "text": "En el cas de contingut en format de només so preenregistrat (1) contingui principalment veu de primer pla, (2) no sigui un CAPTCHA o un logotip sonor i (3) no sigui una vocalització que intenta ser una expressió musical com ara una cançó o un rap, s'ha de complir almenys un dels punts següents:",
@@ -318,6 +326,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:visual-audio-contrast-visual-presentation",
                             "num": "1.4.8",
                             "handle": "Presentació visual",
                             "text": "per a la presentació visual de blocs de text, s'ha de disposar d'un mecanisme per aconseguir el següent:",
@@ -351,6 +360,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:visual-audio-contrast-text-images",
                             "num": "1.4.9",
                             "handle": "Imatges de text (sense excepció)",
                             "text": "les imatges de text s'usen només com a simple decoració o quan una presentació específica del text és essencial per a la informació que es transmet.",
@@ -380,7 +390,7 @@
                     "text": "feu que totes les funcionalitats estiguin disponibles des del teclat.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:keyboard-operation-all-funcs",
+                            "id": "WCAG2:keyboard-operation-keyboard-operable",
                             "num": "2.1.1",
                             "handle": "Teclat",
                             "text": "Totes les funcionalitats del contingut s'han de poder executar mitjançant una interfície de teclat sense que es requereixin temps determinats per prémer una tecla concreta, excepte quan la funció subjacent requereixi una entrada que depèn de la ruta del moviment de l'usuari i no només dels punts finals.",
@@ -413,6 +423,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:keyboard-operation-all-funcs",
                             "num": "2.1.3",
                             "handle": "Teclat (sense excepció)",
                             "text": "Totes les funcionalitats del contingut han de poder ser executables a través d'una interfície de teclat sense que es requereixin temps determinats per prémer una tecla concreta.",
@@ -427,7 +438,7 @@
                     "text": "proporcioneu als usuaris temps suficient per llegir i usar el contingut.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:time-limits-no-exceptions",
+                            "id": "WCAG2:time-limits-required-behaviors",
                             "num": "2.2.1",
                             "handle": "Temps ajustable",
                             "text": "sempre que el contingut estableixi un límit de temps, s'ha de complir almenys un dels casos següents:",
@@ -470,7 +481,7 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:time-limits-postponed",
+                            "id": "WCAG2:time-limits-pause",
                             "num": "2.2.2",
                             "handle": "Pausar, aturar, amagar",
                             "text": "en el cas d'informació que es mou, que parpelleja, que es desplaça o que s'actualitza automàticament tot el següent és cert:",
@@ -512,19 +523,21 @@
                             ]
                         },
                         {
-                            "id": "WCAG2:time-limits-server-timeout",
+                            "id": "WCAG2:time-limits-no-exceptions",
                             "num": "2.2.3",
                             "handle": "Sense límit de temps",
                             "text": "el temps no és una part essencial de l'esdeveniment o activitat presentada pel contingut, amb l'excepció del multimèdia sincronitzat no interactiu i dels esdeveniments en temps real.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:time-limits-postponed",
                             "num": "2.2.4",
                             "handle": "Interrupcions",
                             "text": "l'usuari ha de poder posposar o suprimir les interrupcions, amb l'excepció de les interrupcions que impliquin una emergència.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:time-limits-server-timeout",
                             "num": "2.2.5",
                             "handle": "Tornar a autentificar",
                             "text": "quan una sessió autentificada expira, l'usuari ha de poder continuar l'activitat sense perdre cap dada després de tornar-se a autentificar.",
@@ -539,7 +552,7 @@
                     "text": "no dissenyeu contingut si se sap que podria provocar atacs epil·lèptics.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:seizure-three-times",
+                            "id": "WCAG2:seizure-does-not-violate",
                             "num": "2.3.1",
                             "handle": "Tres centelleigs o per sota del llindar",
                             "text": "les pàgines web no han de contenir cap element que centellegi més de tres vegades per segon o bé el centelleig ha d'estar per sota dels llindars de centelleig general i de centelleig vermell.",
@@ -553,6 +566,7 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:seizure-three-times",
                             "num": "2.3.2",
                             "handle": "Tres centelleigs",
                             "text": "les pàgines web no han de contenir cap element que centellegi més de tres vegades per segon.",
@@ -567,21 +581,21 @@
                     "text": "proporcioneu vies per ajudar els usuaris a navegar, trobar el contingut i determinar on es troben.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:navigation-mechanisms-location",
+                            "id": "WCAG2:navigation-mechanisms-skip",
                             "num": "2.4.1",
                             "handle": "Saltar blocs",
                             "text": "s'ofereix un mecanisme que permet de saltar aquells blocs de contingut que es repeteixen en diverses pàgines web.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:navigation-mechanisms-link",
+                            "id": "WCAG2:navigation-mechanisms-title",
                             "num": "2.4.2",
                             "handle": "Títols de pàgina",
                             "text": "les pàgines web han de tenir títols que descriuen el tema o el propòsit de la pàgina.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:navigation-mechanisms-headings",
+                            "id": "WCAG2:navigation-mechanisms-focus-order",
                             "num": "2.4.3",
                             "handle": "Ordre de focus",
                             "text": "en el cas que una pàgina web es pugui navegar en ordre seqüencial i les seqüències de navegació n'afectin el significat o el funcionament, els components han de rebre el focus en un ordre que en preservi el significat i el funcionament.",
@@ -595,36 +609,42 @@
                             "level": "A"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-mult-loc",
                             "num": "2.4.5",
                             "handle": "Vies múltiples",
                             "text": "s'ofereixen diverses vies per localitzar una pàgina web dins un conjunt de pàgines web excepte quan la pàgina web és el resultat d'un procés o una fase dins un procés.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-descriptive",
                             "num": "2.4.6",
                             "handle": "Encapçalaments i etiquetes descriptives",
                             "text": "els encapçalaments i les etiquetes descriuen el tema o el propòsit.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-focus-visible",
                             "num": "2.4.7",
                             "handle": "Focus Visible",
                             "text": "qualsevol interfície d'usuari utilitzable amb teclat ha de disposar d'un mode de funcionament en el qual l'indicador de focus de teclat sigui sempre visible.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-location",
                             "num": "2.4.8",
                             "handle": "Localització",
                             "text": "s'ha de proporcionar a l'usuari informació sobre la seva localització dins un conjunt de pàgines web.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-link",
                             "num": "2.4.9",
                             "handle": "Finalitat de l'enllaç (només l'enllaç)",
                             "text": "s'ha de proporcionar un mecanisme que permeti d'identificar la finalitat de cada enllaç només des del text de l'enllaç, excepte quan la finalitat pugui resultar ambigua per als usuaris en general.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:navigation-mechanisms-headings",
                             "num": "2.4.10",
                             "handle": "Encapçalaments de secció",
                             "text": "s'han d'usar encapçalaments de secció per organitzar el contingut.",
@@ -659,40 +679,42 @@
                     "text": "feu que el contingut textual sigui llegible i entenedor.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:meaning-idioms",
+                            "id": "WCAG2:meaning-doc-lang-id",
                             "num": "3.1.1",
                             "handle": "Idioma de la pàgina",
                             "text": "el llenguatge natural per defecte de cada pàgina web ha de poder ser identificat per programació.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:meaning-located",
+                            "id": "WCAG2:meaning-other-lang-id",
                             "num": "3.1.2",
                             "handle": "Idioma de les parts",
                             "text": "el llenguatge natural de cada passatge o frase del contingut ha de poder ser identificat per programació excepte en el cas de noms propis, termes tècnics, paraules en un idioma no determinat, i paraules o frases que han passat a formar part de l'idioma del text que l'envolta.",
                             "level": "AA"
                         },
                         {
-                            "id": "WCAG2:meaning-supplements",
+                            "id": "WCAG2:meaning-idioms",
                             "num": "3.1.3",
                             "handle": "Paraules inusuals",
                             "text": "s'ofereix un mecanisme que permet d'identificar definicions concretes de paraules o frases que s'estiguin usant de manera poc usual o restringida, incloses les frases fetes i l'argot.",
                             "level": "AAA"
                         },
                         {
-                            "id": "WCAG2:meaning-pronunciation",
+                            "id": "WCAG2:meaning-located",
                             "num": "3.1.4",
                             "handle": "Abreviacions",
                             "text": "s'ofereix un mecanisme que permet d'identificar la forma desenvolupada o el significat de les abreviacions.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:meaning-supplements",
                             "num": "3.1.5",
                             "handle": "Nivell de lectura",
                             "text": "quan, després de suprimir els títols i noms propis, el text requereixi una capacitat lectora superior al nivell de secundària obligatòria, cal posar a disposició de l'usuari o bé contingut suplementari, o bé una versió alternativa que no requereixi una capacitat lectora superior al nivell d'educació secundària obligatòria.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:meaning-pronunciation",
                             "num": "3.1.6",
                             "handle": "Pronunciació",
                             "text": "cal disposar d'un mecanisme que permeti d'identificar la pronunciació correcta d'aquelles paraules el significat de les quals pugui ser ambigu si no se'n coneix la pronunciació.",
@@ -707,32 +729,35 @@
                     "text": "feu que les pàgines web es mostrin i funcionin de manera previsible.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:consistent-behavior-no-extreme-changes-context",
+                            "id": "WCAG2:consistent-behavior-receive-focus",
                             "num": "3.2.1",
                             "handle": "Focus",
                             "text": "no s'inicia un canvi en el context en el moment en què un component rep el focus.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:consistent-behavior-consistent-functionality",
+                            "id": "WCAG2:consistent-behavior-unpredictable-change",
                             "num": "3.2.2",
                             "handle": "Amb l'entrada",
                             "text": "la configuració d'algun component d'interfície d'usuari no provoca un canvi en el context tret que l'usuari hagi estat advertit del comportament abans de l'ús del mateix.",
                             "level": "A"
                         },
                         {
+                            "id": "WCAG2:consistent-behavior-consistent-locations",
                             "num": "3.2.3",
                             "handle": "Navegació consistent",
                             "text": "els mecanismes de navegació que es repeteixen en múltiples pàgines web dins un conjunt de pàgines web s'han de presentar en el mateix ordre relatiu cada vegada que es repeteixin, a menys que l'usuari canviï voluntàriament aquest ordre.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:consistent-behavior-consistent-functionality",
                             "num": "3.2.4",
                             "handle": "Identificació consistent",
                             "text": "els components que tenen la mateixa funcionalitat dins un conjunt de pàgines web s'han d'identificar de manera consistent.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:consistent-behavior-no-extreme-changes-context",
                             "num": "3.2.5",
                             "handle": "Canvi sota petició",
                             "text": "els canvis en el context només s'han de poder iniciar a petició de l'usuari o s'ha d'oferir un mecanisme per deshabilitar aquests canvis.",
@@ -747,26 +772,28 @@
                     "text": "ajudeu els usuaris a evitar i corregir errors.",
                     "successcriteria": [
                         {
-                            "id": "WCAG2:minimize-error-context-help",
+                            "id": "WCAG2:minimize-error-identified",
                             "num": "3.3.1",
                             "handle": "Identificació d'errors",
                             "text": "si es detecta de manera automàtica un error d'entrada s'ha d'identificar l'ítem equivocat i descriure l'error textualment a l'usuari.",
                             "level": "A"
                         },
                         {
-                            "id": "WCAG2:minimize-error-reversible-all",
+                            "id": "WCAG2:minimize-error-cues",
                             "num": "3.3.2",
                             "handle": "Etiquetes o instruccions",
                             "text": "cal proporcionar etiquetes o instruccions quan el contingut requereixi una entrada per l'usuari.",
                             "level": "A"
                         },
                         {
+                            "id": "WCAG2:minimize-error-suggestions",
                             "num": "3.3.3",
                             "handle": "Suggeriment de correcció d'errors",
                             "text": "en el cas que es detecti de manera automàtica un error d'entrada cal fer suggeriments a l'usuari per corregir-lo, sempre que els suggeriments siguin coneguts i no facin perillar la seguretat o finalitat del contingut.",
                             "level": "AA"
                         },
                         {
+                            "id": "WCAG2:minimize-error-reversible",
                             "num": "3.3.4",
                             "handle": "Prevenció d'errors (legals, financers o de dades)",
                             "text": "en el cas de pàgines web que requereixin que l'usuari adquireixi obligacions legals o fer transaccions financeres, que modifiquin o esborrin dades controlables per l'usuari en sistemes d'emmagatzemament de dades, o que processin les respostes de l'usuari en avaluacions, cal complir com a mínim una de les condicions següents:",
@@ -792,12 +819,14 @@
                             ]
                         },
                         {
+                            "id": "WCAG2:minimize-error-context-help",
                             "num": "3.3.5",
                             "handle": "Ajuda",
                             "text": "cal proporcionar ajuda contextual.",
                             "level": "AAA"
                         },
                         {
+                            "id": "WCAG2:minimize-error-reversible-all",
                             "num": "3.3.6",
                             "handle": "Prevenció d'errors (tots)",
                             "text": "en el cas de pàgines web en què es requereix que l'usuari enviï informació, cal complir com a mínim una de les condicions següents:",
